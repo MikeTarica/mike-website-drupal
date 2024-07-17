@@ -98,6 +98,20 @@ button {
   background: transparent;
 }
 
+header {
+  background-color: rgb(157, 174, 199);
+}
+.site-name {
+  display: none;
+}
+.region-header {
+  position: relative;
+  display: inline-flex;
+  align-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .clearfix .text-formatted .field .field--name-body .field--type-text-with-summary .field--label-hidden .field__item {
   font-size: 20px;
   margin: 0 0 0 0;
@@ -110,10 +124,6 @@ button {
 .field--name-field-banner .field__item {
   font-size: 65px;
 }
-.field--name-field-banner header {
-  background-color: rgb(89, 133, 199);
-}
-
 .node__submitted {
   display: none;
 }

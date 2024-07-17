@@ -137,6 +137,38 @@ button {
 // Navigation
 .block-system {}
 
+// navigation and menu 
+
+header {
+  background-color: rgb(157, 174, 199);
+
+  .banner {}
+}
+
+.site-name {
+  display: none;
+
+
+
+  .block .block-menu .navigation .menu--main {}
+}
+
+.region-header {
+  position: relative;
+  // padding-right: 120px;
+  // padding-left: 120px;
+  // padding-bottom: 42px;
+  // padding-top: 42px;
+  display: inline-flex;
+  align-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+
+
+
 // banner paragraph home page
 .clearfix .text-formatted .field .field--name-body .field--type-text-with-summary .field--label-hidden .field__item {
   font-size: 20px;
@@ -155,7 +187,7 @@ button {
   }
 
   header {
-    background-color: rgb(89, 133, 199);
+    // background-color: rgb(89, 133, 199);
   }
 }
 

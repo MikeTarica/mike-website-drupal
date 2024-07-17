@@ -42,27 +42,4 @@ ul.menu a.is-active {
   color: #000;
 }
 
-.site-name {
-  display: none;
-}
-
-.block .block-menu .navigation .menu--main {
-  background-color: rgb(89, 133, 199);
-}
-
-.region-header {
-  position: relative;
-  padding-right: 120px;
-  padding-left: 120px;
-  padding-bottom: 42px;
-  padding-top: 42px;
-  display: inline-flex;
-  align-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-  height: auto;
-  background-color: rgb(89, 133, 199);
-}
-
 /*# sourceMappingURL=menu.css.map */
