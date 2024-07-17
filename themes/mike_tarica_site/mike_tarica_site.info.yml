@@ -1,0 +1,30 @@
+name: mike_tarica_site
+type: theme
+'base theme': stable9
+starterkit: true
+version: VERSION
+libraries:
+  - mike_tarica_site/bootstrap
+  - mike_tarica_site/full-site-logic
+  - mike_tarica_site/base
+  - mike_tarica_site/global-styling
+  - mike_tarica_site/nodes
+  - mike_tarica_site/action-links
+  - mike_tarica_site/breadcrumbs
+  - mike_tarica_site/exposed-filters
+  - mike_tarica_site/icons
+  - mike_tarica_site/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - mike_tarica_site/user
+  core/drupal.dropbutton:
+    - mike_tarica_site/dropbutton
+  core/drupal.dialog:
+    - mike_tarica_site/dialog
+  file/drupal.file:
+    - mike_tarica_site/file
+  core/drupal.progress:
+    - mike_tarica_site/progress
+core_version_requirement: ^10
+generator: 'starterkit_theme:10.0.9'

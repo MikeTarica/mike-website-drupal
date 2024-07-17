@@ -1,0 +1,264 @@
+/* color brands */
+// primary colors
+$primary-col-1: #0C0032;
+$primary-col-2: #190061;
+$primary-col-3: #240090;
+$primary-col-4: #3500D3;
+$primary-col-5: #282828;
+$primary-col-6: #b8b8b8;
+// secondary color
+$secondary-col-1: #1a1a1d;
+$secondary-col-2: #4e4e50;
+$secondary-col-3: #6f2232;
+$secondary-col-4: #950740;
+$secondary-col-5: #C3073F;
+// article page colors
+$page-col-scheme-1: #000000;
+$page-col-scheme-2: #1c171e;
+$page-col-scheme-3: #c6bfc6;
+$page-col-scheme-4: #7a6d76;
+$page-col-scheme-5: #baa7ad;
+
+// banner color scheme
+$banner-col-scheme-1: #000000;
+$banner-col-scheme-2: #fcfcfc;
+$banner-col-scheme-3: #9d00ff;
+$banner-col-scheme-4: #7a6d76;
+$banner-col-scheme-5: #baa7ad;
+// Genetic font color group
+$page-text-white: #f1ecec;
+
+/* Gradiants  */
+$theme-1-gradiant-main: linear-gradient(to right, rgba(2, 0, 36, 0) 0%, #c3073f87 25% #1c171e 56%, #c3073f87 100%);
+$theme-1-gradiant-main-sub: linear-gradient(to right, rgba(2, 0, 36, 0) 0%, rgba(255, 255, 255, 0.898) 56%, rgba(255, 42, 0, 0.513) 100%);
+$gradaint-theme-bg:#baa7ad2e;
+$theme-1-banner-overlay: linear-gradient(rgb(51 51 51) 0%, rgb(255 255 255 / 37%) 56%, rgb(255 42 0 / 20%) 100%);
+
+
+$font-stack: Helvetica,
+sans-serif,
+arial;
+
+:root {}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+.field {
+  font-family: Arial,
+    Helvetica,
+    sans-serif;
+
+  .page-title {
+    padding: 0px;
+  }
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+
+
+// Navigation
+.block-system {}
+
+// banner paragraph home page
+.clearfix .text-formatted .field .field--name-body .field--type-text-with-summary .field--label-hidden .field__item {
+  font-size: 20px;
+  margin: 0 0 0 0;
+}
+
+.block .block-system .block-system-branding-block {
+  font-size: 20px;
+}
+
+// Banner 
+.field--name-field-banner {
+
+  .field__item {
+    font-size: 65px;
+  }
+
+  header {
+    background-color: rgb(89, 133, 199);
+  }
+}
+
+.node__submitted {
+  display: none;
+
+}
+
+// Hero Banner Component 
+.field--name-field-hero-components {
+  padding-left: 13px;
+  padding-right: 13px;
+
+
+  /* Small devices such as large phones (640px and up) */
+  @media only screen and (max-width: 430px) {
+
+    .region-header {}
+
+    .banner {
+      background-color: bisque;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 200%;
+
+      .hero-copy {
+        width: 100%;
+      }
+
+      .hero-image {
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 48px;
+
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        margin-top: 14px;
+      }
+
+    }
+  }
+
+  /* Medium devices such as tablets (768px and up) */
+  @media only screen and (min-width: 768px) {}
+
+  /* Large devices such as laptops (1024px and up) */
+  @media only screen and (min-width: 1024px) {}
+
+  /* Largest devices such as desktops (1280px and up) */
+  @media only screen and (min-width: 1280px) {}
+
+}
+
+//Secondary Banner Home page 
+
+.banner-sub {
+  padding-top: 46px;
+  padding-left: 185px;
+  padding-right: 185px;
+
+  //image size
+  img {
+    width: 88%;
+    max-width: 92%;
+    height: auto;
+  }
+
+
+}
+
+.paragraph--type--sub-second-banner {
+  text-align: center;
+}
+
+// Img and copy with CTA
+.img-left-copy-right {
+  padding-top: 46px;
+  padding-left: 260px;
+  padding-right: 260px;
+
+  .cta-button {
+    background-color: #3500D3;
+    border-radius: 3px;
+    margin: 20px 150px 20px 150px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    a {
+      font-size: 27px;
+      color: white;
+    }
+  }
+}
+
+// genereal image 
+img {
+  width: 100%;
+  height: auto;
+}

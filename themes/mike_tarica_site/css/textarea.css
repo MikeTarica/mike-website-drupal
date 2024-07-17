@@ -1,0 +1,48 @@
+/**
+ * @file
+ * Visual styles for a resizable textarea.
+ */
+.form-textarea-wrapper textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  height: auto;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 15px;
+}
+
+h2 {
+  font-size: 35px;
+  margin: 15px;
+}
+
+h3 {
+  font-size: 30px;
+  margin: 15px;
+}
+
+h4 {
+  font-size: 25px;
+  margin: 15px;
+}
+
+h5 {
+  font-size: 20px;
+  margin: 15px;
+}
+
+h6 {
+  font-size: 15px;
+  margin: 15px;
+}
+
+p {
+  font-size: 18;
+  margin: 15px;
+}
+
+/*# sourceMappingURL=textarea.css.map */

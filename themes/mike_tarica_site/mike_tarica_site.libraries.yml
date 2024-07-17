@@ -1,0 +1,113 @@
+base:
+  version: VERSION
+  js:
+    
+    js/components/full-site-logic.js: { }
+  css:
+    
+    component:
+      css/bootstrap.min.css: { }
+
+      css/global-styling.css: { }
+      
+      css/action-links.css: {  }
+        
+      css/breadcrumb.css: {  }
+        
+      css/button.css: {  }
+        
+      css/container-inline.css: {  }
+        
+      css/details.css: {  }
+        
+      css/exposed-filters.css: {  }
+      
+      css/field.css: {  }
+        
+      css/form.css: {  }
+        
+      css/icons.css: {  }
+        
+      css/inline-form.css: {  }
+        
+      css/item-list.css: {  }
+        
+      css/link.css: {  }
+        
+      css/links.css: {  }
+        
+      css/menu.css: {  }
+        
+      css/more-link.css: {  }
+        
+      css/pager.css: {  }
+        
+      css/tabledrag.css: {  }
+        
+      css/tableselect.css: {  }
+        
+      css/tablesort.css: {  }
+        
+      css/tabs.css: {  }
+        
+      css/textarea.css: {  }
+        
+      css/ui-dialog.css: {  }
+
+dialog:
+  version: VERSION
+  css:
+    component:
+      css/dialog.css: {  }
+        
+dropbutton:
+  version: VERSION
+  css:
+    component:
+      css/dropbutton.css: {  }
+        
+file:
+  version: VERSION
+  css:
+    component:
+      css/file.css: {  }
+        
+image-widget:
+  version: VERSION
+  css:
+    component:
+      css/image-widget.css: {  }
+indented:
+  version: VERSION
+  css:
+    component:
+      css/indented.css: {  }
+messages:
+  version: VERSION
+  css:
+    component:
+      css/messages.css: {  }
+        
+node:
+  version: VERSION
+  css:
+    component:
+      css/node.css: {  }
+        
+progress:
+  version: VERSION
+  css:
+    component:
+      css/progress.css: {  }
+        
+search-results:
+  version: VERSION
+  css:
+    component:
+      css/search-results.css: {  }
+user:
+  version: VERSION
+  css:
+    component:
+      css/user.css: {  }
+        
