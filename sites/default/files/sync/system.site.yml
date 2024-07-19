@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: 484c5861-4170-4c58-8f89-400bfb6b9050
+name: 'site name'
+mail: mike.tarica@me.com
+slogan: test
+page:
+  403: ''
+  404: ''
+  front: /node/3
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: null
