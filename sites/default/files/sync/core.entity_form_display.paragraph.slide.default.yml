@@ -1,0 +1,34 @@
+uuid: 4495629a-df08-4228-8062-fbd3cd597e15
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slide.field_slides
+    - field.field.paragraph.slide.field_slides_copy
+    - paragraphs.paragraphs_type.slide
+  module:
+    - media_library
+    - text
+id: paragraph.slide.default
+targetEntityType: paragraph
+bundle: slide
+mode: default
+content:
+  field_slides:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_slides_copy:
+    type: text_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

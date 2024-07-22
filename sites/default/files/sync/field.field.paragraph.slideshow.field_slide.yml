@@ -1,0 +1,52 @@
+uuid: f6647cdb-282a-4149-a9be-750211be2db5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slide
+    - paragraphs.paragraphs_type.slide
+    - paragraphs.paragraphs_type.slideshow
+  module:
+    - entity_reference_revisions
+id: paragraph.slideshow.field_slide
+field_name: field_slide
+entity_type: paragraph
+bundle: slideshow
+label: Slide
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      slide: slide
+    negate: 0
+    target_bundles_drag_drop:
+      hero_banner:
+        weight: 10
+        enabled: false
+      image:
+        weight: 11
+        enabled: false
+      img_left_body_right:
+        weight: 12
+        enabled: false
+      img_right_body_left:
+        weight: 13
+        enabled: false
+      slide:
+        weight: 14
+        enabled: true
+      slideshow:
+        weight: 9
+        enabled: false
+      sub_second_banner:
+        weight: 15
+        enabled: false
+      testimonals:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

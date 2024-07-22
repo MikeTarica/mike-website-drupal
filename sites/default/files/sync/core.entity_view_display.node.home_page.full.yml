@@ -1,0 +1,33 @@
+uuid: 3ec44801-f432-47f4-80ec-91d7c725f84b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.home_page.field_hero_components
+    - field.field.node.home_page.field_slick_image
+    - node.type.home_page
+  module:
+    - entity_reference_revisions
+    - user
+id: node.home_page.full
+targetEntityType: node
+bundle: home_page
+mode: full
+content:
+  field_hero_components:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: preview
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_slick_image: true

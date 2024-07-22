@@ -1,0 +1,24 @@
+uuid: 4b7ac0bd-9e91-492b-96e8-aac5c354b32d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.home_page.field_hero_components
+    - field.field.node.home_page.field_slick_image
+    - node.type.home_page
+  module:
+    - user
+id: node.home_page.teaser
+targetEntityType: node
+bundle: home_page
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_hero_components: true
+  field_slick_image: true
