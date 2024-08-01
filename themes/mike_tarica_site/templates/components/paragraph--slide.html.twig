@@ -47,18 +47,25 @@
   ]
 %}
 {% block paragraph %}
-  <div{{ attributes.addClass(classes) }}>
-    {% block content %}
-      <div class="slide-paratype">
-        <div class="slide-parent-images">
-          {{ content.field_slides.0}}
-        </div>
-        <div class="slide-title">
-          <h3>
-            {{ content.field_slides_copy.0 }}
-          </h3>
-        </div>
-      </div>
-    {% endblock %}
-  </div>
+	<div{{attributes.addClass(classes)}}>
+		{% block content %}
+			<div class="container">
+				<div class="slider-par row">
+					<div class="slide-paratype col-12 col-sm-12">
+
+						<div class="slide-parent-images">
+							{{ content.field_slides.0}}
+						</div>
+						<div class="slide-title">
+							<h3>
+								{{ content.field_slides_copy.0 }}
+							</h3>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		{% endblock %}
+	</div>
 {% endblock paragraph %}

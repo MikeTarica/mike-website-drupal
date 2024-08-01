@@ -4,10 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.node.home_page.field_hero_components
-    - field.field.node.home_page.field_slick_image
     - node.type.home_page
   module:
-    - media_library
     - paragraphs
     - path
 id: node.home_page.default
@@ -38,13 +36,6 @@ content:
       features:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
-    third_party_settings: {  }
-  field_slick_image:
-    type: media_library_widget
-    weight: 28
-    region: content
-    settings:
-      media_types: {  }
     third_party_settings: {  }
   path:
     type: path

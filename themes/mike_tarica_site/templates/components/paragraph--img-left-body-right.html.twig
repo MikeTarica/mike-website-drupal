@@ -47,23 +47,28 @@
   ]
 %}
 {% block paragraph %}
-  <div{{ attributes.addClass(classes) }}>
-    {% block content %}
-    <div class="img-left-copy-right row">
-      <div class="col-6">
-          {{ content.field_img_left_body_right_image.0 }}
-      </div>
-      <div class="img-left-copy-right-body col-6">
-         <h2>
-           {{ content.field_img_left_body_right_headin.0 }}
-         </h2>
-          {{ content.field_img_left_body_right_text.0 }}
-          <div class="cta-button">
-            {{ content.field_img_left_body_right_link.0 }}
-          </div>
-          
-      </div>
-    </div>      
-    {% endblock %}
-  </div>
+	<div{{attributes.addClass(classes)}}>
+		{% block content %}
+<div class="container-fluid">
+<div class="img-left-copy-right row">
+
+	<div class="col-12 col-sm-6">
+		{{ content.field_img_left_body_right_image.0 }}
+	</div>
+
+	<div class="img-left-copy-right-body col-12 col-sm-6">
+		<h2>
+			{{ content.field_img_left_body_right_headin.0 }}
+		</h2>
+		{{ content.field_img_left_body_right_text.0 }}
+		<div class="cta-button">
+			{{ content.field_img_left_body_right_link.0 }}
+		</div>
+	</div>
+</div>
+
+</div>
+		{% endblock %}
+	</div>
+
 {% endblock paragraph %}

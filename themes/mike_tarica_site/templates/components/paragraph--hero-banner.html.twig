@@ -47,19 +47,28 @@
   ]
 %}
 {% block paragraph %}
-  <div{{ attributes.addClass(classes) }}>
-    {% block content %}
-      <div class="banner row">
-        <div class="hero-image col-4">
-          {{ content.field_hero_image.0}}
-        </div>
-        <div class="hero-copy col-8">
-          <h1>
-            {{ content.field_hero_heading.0 }}
-          </h1>
-          {{ content.field_hero_text.0}}
-        </div>
-      </div>
-    {% endblock %}
-  </div>
+	<div{{attributes.addClass(classes)}}>
+		{% block content %}
+			<div class="container-fluid">
+
+
+				<div class="banner row">
+
+					<div class="hero-image col-12 col-sm-4">
+
+						{{ content.field_hero_image.0}}
+					</div>
+
+					<div class="hero-copy col-12 col-sm-8">
+
+						<h1>
+							{{ content.field_hero_heading.0 }}
+						</h1>
+						{{ content.field_hero_text.0}}
+					</div>
+				</div>
+
+			</div>
+		{% endblock %}
+	</div>
 {% endblock paragraph %}

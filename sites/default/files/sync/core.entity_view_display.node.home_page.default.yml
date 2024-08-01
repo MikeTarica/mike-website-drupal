@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.home_page.field_hero_components
-    - field.field.node.home_page.field_slick_image
     - node.type.home_page
   module:
     - entity_reference_revisions
@@ -22,15 +21,6 @@ content:
       link: ''
     third_party_settings: {  }
     weight: 2
-    region: content
-  field_slick_image:
-    type: entity_reference_entity_view
-    label: above
-    settings:
-      view_mode: slick
-      link: false
-    third_party_settings: {  }
-    weight: 3
     region: content
   links:
     settings: {  }
