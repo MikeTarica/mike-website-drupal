@@ -136,11 +136,34 @@ button {
   display: none;
 }
 
+// site branding and logo 
+
+.site-name {
+  padding: 14px 9px 13px 12px;
+
+  .heading-name {
+    font-size: 22px;
+
+    a {
+      color: $banner-col-scheme-2;
+    }
+
+    a:link {
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: $secondary-col-5;
+    }
+  }
+}
+
 // Navigation
 .block-system {}
 
 .site-name {
-  display: none;
+
 
   .block .block-menu .navigation .menu--main {}
 
@@ -152,10 +175,6 @@ button {
 
 .region-header {
   position: relative;
-  // padding-right: 120px;
-  // padding-left: 120px;
-  // padding-bottom: 42px;
-  // padding-top: 42px;
   display: inline-flex;
   align-content: space-around;
   align-items: center;
@@ -172,6 +191,15 @@ button {
 .banner {
   padding: 16px 54px 14px 54px;
   background: linear-gradient(90deg, rgba(54, 84, 91, 0.315) 0%, rgba(149, 119, 119, 0.37) 56%, rgba(218, 181, 59, 0.092) 100%);
+
+  .hero-image {
+
+    img {
+      width: 100%;
+      height: auto;
+      max-width: max-content;
+    }
+  }
 }
 
 .field--name-field-hero-components {
@@ -195,19 +223,11 @@ button {
         // width: 100%;
       }
 
-      .hero-image {
-        // width: 100%;
-      }
+
 
       h1 {
         font-size: 48px;
 
-      }
-
-      img {
-        width: 100%;
-        height: auto;
-        margin-top: 14px;
       }
 
     }
@@ -345,19 +365,35 @@ button {
 // Img and copy with CTA
 .img-left-copy-right {
   padding-top: 46px;
+  margin-bottom: 12px;
 
+  img {
+    width: 100%;
+    height: auto;
+  }
 
   .cta-button {
-    background-color: #3500D3;
+    background-color: $primary-col-4;
     border-radius: 3px;
-    margin: 20px 150px 20px 150px;
     text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 4px 20px 4px 20px;
+    width: max-content;
+    margin: 0 auto;
 
     a {
       font-size: 27px;
       color: $banner-col-scheme-2;
+    }
+
+    a:link {
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: $secondary-col-5;
+      font-weight: bold;
+      font-size: 30px;
     }
   }
 
@@ -415,10 +451,8 @@ button {
       img {
         width: 100%;
         height: auto;
-
       }
     }
-
   }
 }
 
@@ -439,24 +473,40 @@ header {
     .menu-header-item {
       padding: 10%;
       float: left;
-      font-size: 16px;
-      color: white;
+      font-size: 21px;
+      font-weight: bold;
+
       text-align: center;
       padding: 20px 27px 27px 27px;
-      text-decoration: none;
       display: flex;
       justify-content: space-around;
+
+      a {
+        color: $banner-col-scheme-2;
+      }
+
+      a:link {
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: none;
+        color: $secondary-col-5;
+      }
     }
+  }
+
+
+
+
+  // genereal image 
+  img {
+    // width: 100%;
+    // height: auto;
   }
 }
 
-
-
 //footer
-.footer-background {
-  color: $banner-col-scheme-4;
-}
-
 .menu-footer {
   position: relative;
   display: flex;
@@ -465,21 +515,20 @@ header {
   flex-direction: row;
 
   .menu-footer-item {
-    padding: 10%;
-    float: left;
-    font-size: 16px;
-    color: white;
+    font-size: 17px;
     text-align: center;
     padding: 20px 27px 27px 27px;
-    text-decoration: none;
     display: flex;
     justify-content: space-around;
+
+
+    a:link {
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: $secondary-col-5;
+    }
   }
-}
-
-// genereal image 
-img {
-  width: 100%;
-  height: auto;
-
 }

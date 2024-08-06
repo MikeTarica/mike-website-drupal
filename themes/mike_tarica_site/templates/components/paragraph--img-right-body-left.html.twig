@@ -49,33 +49,28 @@
 {% block paragraph %}
 	<div{{attributes.addClass(classes)}}>
 		{% block content %}
-
-			<div class="container-fluid">
-
+			<div class="container-lg">
 				<div class="img-left-copy-right row">
-
-
 					<div class="img-left-copy-right-body col-12 col-sm-6">
 						<h2>
 							{{ content.field_img_right_body_left_headin.0 }}
 						</h2>
 						{{ content.field_img_right_body_left_text.0 }}
-						<div class="cta-button">
-							{{ content.field_img_right_body_left_link.0 }}
+<div class="container-md">
+
+							<div class="cta-button col-sm-12">
+
+								{{ content.field_img_right_body_left_link.0 }}
+							</div>
 						</div>
-
 					</div>
-
 					<div class="col-12 col-sm-6">
-
-
 						{{ content.field_img_right_body_left_image.0 }}
-
 					</div>
 				</div>
-				</div>
-			{% endblock %}
-		</div>
+			</div>
+		{% endblock %}
+	</div>
 
 
-	{% endblock paragraph %}
+{% endblock paragraph %}

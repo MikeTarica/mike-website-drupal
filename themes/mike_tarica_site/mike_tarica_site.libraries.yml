@@ -6,7 +6,8 @@ base:
   css:
     
     component:
-      css/bootstrap.min.css: { }
+    
+      css/bootstrap-scss/bootstrap.css: { }
 
       css/global-styling.css: { }
       
