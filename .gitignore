@@ -51,6 +51,7 @@ sites/simpletest
 /dist
 /.cache
 /.ddev
+/.ddev
 /artifacts
 *.DS_Store
 nbproject/
