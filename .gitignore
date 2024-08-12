@@ -40,21 +40,3 @@ sites/simpletest
 
 # Ignore multi-site test environment.
 # simpletest
-# Temporary build-tools artifacts to be ignored
-/.gotmp/
-/VERSION.txt
-.docker_image
-/dictionary.dic
-/site
-/authors.json
-/docs/cache
-/dist
-/.cache
-/.ddev
-/.ddev
-/artifacts
-*.DS_Store
-nbproject/
-.idea
-*.orig
-*.rej
