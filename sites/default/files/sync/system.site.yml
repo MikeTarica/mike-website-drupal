@@ -6,8 +6,8 @@ name: 'Brand name title'
 mail: mike.tarica@me.com
 slogan: test
 page:
-  403: ''
-  404: ''
+  403: /node/4
+  404: /node/5
   front: /node/3
 admin_compact_mode: false
 weight_select_max: 100
