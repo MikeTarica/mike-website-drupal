@@ -2,7 +2,7 @@ _core:
   default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
 langcode: en
 uuid: 484c5861-4170-4c58-8f89-400bfb6b9050
-name: 'Example Drupal build'
+name: 'Brand name title'
 mail: mike.tarica@me.com
 slogan: test
 page:

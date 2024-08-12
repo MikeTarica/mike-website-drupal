@@ -18,15 +18,15 @@
 	<div class="row">
 
 		{% if site_logo %}
-			<a href="{{ path('<front>') }}" rel="home" class="site-logo col-6 col-sm-3">
+			<a href="{{ path('<front>') }}" rel="home" class="site-logo col-12 col-sm-2">
 				<img src="{{ site_logo }}" alt="{{ 'Home'|t }}"/>
 			</a>
 		{% endif %}
 		{% if site_name %}
-			<div class="site-name col-6 col-sm-9">
-
-				<a class="heading-name" href="{{ path('<front>') }}" rel="home">{{ site_name }}</a>
-
+			<div class="site-name col-12 col-sm-10">
+				<h1>
+					<a class="heading-name" href="{{ path('<front>') }}" rel="home">{{ site_name }}</a>
+				</h1>
 			</div>
 		{% endif %}
 	</div>
@@ -34,4 +34,3 @@
 		<div class="site-slogan">{{ site_slogan }}</div>
 	{% endif %}
 {% endblock %}
-

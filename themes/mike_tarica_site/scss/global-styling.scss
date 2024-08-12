@@ -139,32 +139,67 @@ button {
 // site branding and logo 
 
 .site-name {
-  padding: 14px 9px 13px 12px;
+  // margin: -71px -2px 0px 105px;
+
+  // Animation 
+  @keyframes lights-site-name {
+    0% {
+      color: hsl(230, 40%, 80%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(320, 100%, 60%, 0.3),
+        -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+
+    30% {
+      color: hsl(230, 80%, 90%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 60%, 0.5),
+        -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+
+    40% {
+      color: hsl(230, 100%, 95%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 90%, 0.5),
+        -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+        0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+    }
+
+    70% {
+      color: hsl(230, 80%, 90%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 60%, 0.5),
+        0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+
+    100% {
+      color: hsl(230, 40%, 80%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(320, 100%, 60%, 0.3),
+        1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+  }
 
   .heading-name {
-    font-size: 22px;
+    margin: auto;
+    // font-weight: bolder;
+    animation: lights-site-name 5s 750ms linear infinite;
+    text-decoration: none;
 
-    a {
-      color: $banner-col-scheme-2;
-    }
-
-    a:link {
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: none;
-      color: $secondary-col-5;
-    }
   }
 }
 
 // Navigation
-.block-system {}
-
 .site-name {
-
-
   .block .block-menu .navigation .menu--main {}
 
   header {
@@ -181,11 +216,9 @@ button {
   flex-wrap: wrap;
 }
 
-
 // Banner  // Hero Banner Component 
 .node__submitted {
   display: none;
-
 }
 
 .banner {
@@ -206,7 +239,6 @@ button {
   padding-left: 0px;
   padding-right: 0px;
 
-
   /* Small devices such as large phones (640px and up) */
   @media only screen and (max-width: 430px) {
 
@@ -219,17 +251,11 @@ button {
       flex-direction: column;
       padding: 16px 0px 14px 0px;
 
-      .hero-copy {
-        // width: 100%;
-      }
-
-
+      .hero-copy {}
 
       h1 {
         font-size: 48px;
-
       }
-
     }
   }
 
@@ -255,9 +281,6 @@ button {
   }
 
 }
-
-
-
 
 //Secondary Banner Home page 
 .banner-sub {
@@ -297,19 +320,10 @@ button {
     border-radius: 100%;
   }
 
-
-
-
   /* Small devices such as large phones (640px and up) */
   @media only screen and (max-width: 430px) {}
 
   .banner-sub {
-
-    // display: flex;
-    // flex-direction: column;
-    // flex-wrap: nowrap;
-    // align-content: space-around;
-    // justify-content: space-between;
     .heading-ani {
       font-size: 35%;
     }
@@ -357,11 +371,6 @@ button {
   }
 }
 
-
-
-
-
-
 // Img and copy with CTA
 .img-left-copy-right {
   padding-top: 46px;
@@ -401,8 +410,6 @@ button {
 
   .img-left-copy-right {
     padding-top: 46px;
-
-
   }
 
   /* Medium devices such as tablets (768px and up) */
@@ -495,9 +502,6 @@ header {
       }
     }
   }
-
-
-
 
   // genereal image 
   img {

@@ -102,21 +102,32 @@ button {
   display: none;
 }
 
-.site-name {
-  padding: 14px 9px 13px 12px;
+@keyframes lights-site-name {
+  0% {
+    color: hsl(230deg, 40%, 80%);
+    text-shadow: 0 0 1em hsla(320deg, 100%, 50%, 0.2), 0 0 0.125em hsla(320deg, 100%, 60%, 0.3), -1em -0.125em 0.5em hsla(40deg, 100%, 60%, 0), 1em 0.125em 0.5em hsla(200deg, 100%, 60%, 0);
+  }
+  30% {
+    color: hsl(230deg, 80%, 90%);
+    text-shadow: 0 0 1em hsla(320deg, 100%, 50%, 0.5), 0 0 0.125em hsla(320deg, 100%, 60%, 0.5), -0.5em -0.125em 0.25em hsla(40deg, 100%, 60%, 0.2), 0.5em 0.125em 0.25em hsla(200deg, 100%, 60%, 0.4);
+  }
+  40% {
+    color: hsl(230deg, 100%, 95%);
+    text-shadow: 0 0 1em hsla(320deg, 100%, 50%, 0.5), 0 0 0.125em hsla(320deg, 100%, 90%, 0.5), -0.25em -0.125em 0.125em hsla(40deg, 100%, 60%, 0.2), 0.25em 0.125em 0.125em hsla(200deg, 100%, 60%, 0.4);
+  }
+  70% {
+    color: hsl(230deg, 80%, 90%);
+    text-shadow: 0 0 1em hsla(320deg, 100%, 50%, 0.5), 0 0 0.125em hsla(320deg, 100%, 60%, 0.5), 0.5em -0.125em 0.25em hsla(40deg, 100%, 60%, 0.2), -0.5em 0.125em 0.25em hsla(200deg, 100%, 60%, 0.4);
+  }
+  100% {
+    color: hsl(230deg, 40%, 80%);
+    text-shadow: 0 0 1em hsla(320deg, 100%, 50%, 0.2), 0 0 0.125em hsla(320deg, 100%, 60%, 0.3), 1em -0.125em 0.5em hsla(40deg, 100%, 60%, 0), -1em 0.125em 0.5em hsla(200deg, 100%, 60%, 0);
+  }
 }
 .site-name .heading-name {
-  font-size: 22px;
-}
-.site-name .heading-name a {
-  color: #fcfcfc;
-}
-.site-name .heading-name a:link {
+  margin: auto;
+  animation: lights-site-name 5s 750ms linear infinite;
   text-decoration: none;
-}
-.site-name .heading-name a:hover {
-  text-decoration: none;
-  color: #C3073F;
 }
 
 .site-name header {
