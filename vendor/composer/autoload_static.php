@@ -75,6 +75,8 @@ class ComposerStaticInit4f8cb63e1c529ab6343464be14a29a3e
             'Symfony\\Component\\DependencyInjection\\' => 38,
             'Symfony\\Component\\Console\\' => 26,
             'Symfony\\Bridge\\PsrHttpMessage\\' => 30,
+            'Shaper\\Tests\\' => 13,
+            'Shaper\\' => 7,
             'SelfUpdate\\' => 11,
         ),
         'R' => 
@@ -100,6 +102,10 @@ class ComposerStaticInit4f8cb63e1c529ab6343464be14a29a3e
         'L' => 
         array (
             'League\\Container\\' => 17,
+        ),
+        'J' => 
+        array (
+            'JsonSchema\\' => 11,
         ),
         'G' => 
         array (
@@ -291,6 +297,14 @@ class ComposerStaticInit4f8cb63e1c529ab6343464be14a29a3e
         array (
             0 => __DIR__ . '/..' . '/symfony/psr-http-message-bridge',
         ),
+        'Shaper\\Tests\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/e0ipso/shaper/tests/src',
+        ),
+        'Shaper\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/e0ipso/shaper/src',
+        ),
         'SelfUpdate\\' => 
         array (
             0 => __DIR__ . '/..' . '/consolidation/self-update/src',
@@ -343,6 +357,10 @@ class ComposerStaticInit4f8cb63e1c529ab6343464be14a29a3e
         'League\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/container/src',
+        ),
+        'JsonSchema\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/justinrainbow/json-schema/src/JsonSchema',
         ),
         'GuzzleHttp\\Psr7\\' => 
         array (

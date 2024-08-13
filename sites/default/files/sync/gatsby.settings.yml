@@ -1,0 +1,20 @@
+_core:
+  default_config_hash: jKtXUI3mnEFgR6IpMl-f_ylb-Dm_-9UjhaM5NyvlGlA
+server_url: ''
+preview_callback_url: ''
+path_mapping: ''
+incrementalbuild_url: 'https://webhook.netlify-connect.com/hooks/data_layer/data_source/publish/YOUR-DATA-LAYER-ID'
+contentsync_url: ''
+build_published: true
+log_json: false
+custom_source_plugin: ''
+supported_entity_types:
+  - node
+  - path_alias
+  - taxonomy_term
+  - paragraph
+publish_private_files: null
+delete_log_entities: false
+log_expiration: '604800'
+prevent_selfreferenced_entities: false
+number_items_delete: 500

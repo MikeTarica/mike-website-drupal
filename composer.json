@@ -22,6 +22,8 @@
         "drupal/core-recommended": "^10.3",
         "drupal/core-vendor-hardening": "^10.1",
         "drupal/entity_usage": "^2.0@beta",
+        "drupal/gatsby": "^2.0@RC",
+        "drupal/jsonapi_schema": "^1.0@RC",
         "drupal/libraries": "^4.0",
         "drupal/paragraphs": "^1.17",
         "drupal/pathauto": "^1.12",

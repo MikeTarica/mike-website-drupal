@@ -12,6 +12,7 @@ module:
   comment: 0
   config: 0
   contact: 0
+  content_moderation: 0
   contextual: 0
   datetime: 0
   dblog: 0
@@ -23,9 +24,13 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  gatsby_extras: 0
   help: 0
   history: 0
   image: 0
+  jsonapi: 0
+  jsonapi_extras: 0
+  jsonapi_schema: 0
   libraries: 0
   link: 0
   media: 0
@@ -63,8 +68,10 @@ module:
   update: 0
   user: 0
   views_ui: 0
+  workflows: 0
   views: 10
   paragraphs: 11
+  gatsby: 100
   standard: 1000
 theme:
   olivero: 0
