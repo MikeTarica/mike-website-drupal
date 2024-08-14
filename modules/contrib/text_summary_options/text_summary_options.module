@@ -1,17 +1,17 @@
 <?php
 
-use Drupal\Core\Form\FormStateInterface;
-use Drupal\field\Entity\FieldConfig;
-
 /**
  * @file
  * Provides options for 'Long Text With Summary' widget.
  */
 
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\field\Entity\FieldConfig;
+
 /**
  * Implements hook_form_FORM_ID_form_alter().
  */
-function text_summary_options_form_field_config_edit_form_alter(array &$form, FormStateInterface $form_state) {
+function text_summary_options_form_field_config_edit_form_alter(array &$form, FormStateInterface $form_state): void {
   $field = $form_state->getFormObject()->getEntity();
 
   if ($field->getType() == 'text_with_summary') {
@@ -25,15 +25,6 @@ function text_summary_options_form_field_config_edit_form_alter(array &$form, Fo
       '#default_value' => (int) $field->getThirdPartySetting('text_summary_options', 'show_summary'),
       '#description' => t('Display the summary field by default.'),
     ];
-
-    if (version_compare(\Drupal::VERSION, 8.8, '<')) {
-      $form['third_party_settings']['text_summary_options']['required_summary'] = [
-        '#type' => 'checkbox',
-        '#title' => t('Mark Summary as required'),
-        '#default_value' => (int)$field->getThirdPartySetting('text_summary_options', 'required_summary'),
-        '#description' => t('Display the summary field by default.'),
-      ];
-    }
 
     $form['third_party_settings']['text_summary_options']['summary_help'] = [
       '#type' => 'textarea',
@@ -52,9 +43,9 @@ function text_summary_options_form_field_config_edit_form_alter(array &$form, Fo
 }
 
 /**
- * Implements hook_field_widget_form_alter().
+ * Implements hook_field_widget_single_element_form_alter().
  */
-function text_summary_options_field_widget_form_alter(&$element, FormStateInterface $form_state, $context) {
+function text_summary_options_field_widget_single_element_form_alter(array &$element, FormStateInterface $form_state, array $context): void {
 
   $field_definition = $context['items']->getFieldDefinition();
 
@@ -70,29 +61,10 @@ function text_summary_options_field_widget_form_alter(&$element, FormStateInterf
     $field_configuration = $field_definition->getConfig($field_definition->getTargetBundle());
 
     $show_summary_setting = (int) $field_configuration->getThirdPartySetting('text_summary_options', 'show_summary');
-    if (version_compare(\Drupal::VERSION, 8.8, '<')) {
-      $required_summary_setting = (int) $field_configuration->getThirdPartySetting('text_summary_options', 'required_summary');
-    }
-    else {
-      $required_summary_setting = FALSE;
-    }
     $summary_help_setting = $field_configuration->getThirdPartySetting('text_summary_options', 'summary_help');
 
     if ($show_summary_setting) {
       unset($element['summary']['#attached']);
-    }
-
-    if ($required_summary_setting) {
-      $element['summary']['#required'] = TRUE;
-
-      /*
-       * Remove conflicting advice from the field's default description
-       * because the field cannot be left blank if it is marked required.
-       */
-      $default_summary_text = t('Leave blank to use trimmed value of full text as the summary.');
-      if ($element['summary']['#description'] == $default_summary_text) {
-        unset($element['summary']['#description']);
-      }
     }
 
     if (!empty($summary_help_setting)) {

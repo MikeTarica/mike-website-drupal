@@ -1,0 +1,20 @@
+{
+    "name": "drupal/text_summary_options",
+    "description": "Provides additional options for Long text with summary widget",
+    "type": "drupal-module",
+    "keywords": ["Drupal", "Prometheus"],
+    "homepage": "https://drupal.org/project/text_summary_options",
+    "license": "GPL-2.0-or-later",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/text_summary_options",
+        "source": "https://github.com/previousnext/text_summary_options"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    },
+    "require-dev": {
+        "jangregor/phpstan-prophecy": "*"
+    }
+}
