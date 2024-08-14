@@ -17,7 +17,6 @@ dependencies:
     - slick_ui
     - system
     - taxonomy
-    - tome_sync
     - toolbar
 _core:
   default_config_hash: Wur9kcEOwY1Jal81NssKnz3RhVJxAvBwyWQBGcA_1Go
@@ -49,7 +48,6 @@ permissions:
   - 'edit own page content'
   - 'edit terms in tags'
   - 'revert all revisions'
-  - 'use tome sync'
   - 'view all revisions'
   - 'view own unpublished content'
   - 'view the administration theme'
