@@ -10,9 +10,6 @@ log_json: false
 custom_source_plugin: ''
 supported_entity_types:
   - node
-  - path_alias
-  - taxonomy_term
-  - paragraph
 publish_private_files: null
 delete_log_entities: false
 log_expiration: '604800'
