@@ -3,12 +3,10 @@ build
 ]
   command = "composer install && drush deploy"
   publish = "web"
-
 [
 context.production.environment
 ]
   DRUSH_SITE_ALIAS = "your_site_alias"
-
 [[
 redirects
 ]]
