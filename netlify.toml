@@ -1,15 +1,11 @@
-[
-build
-]
+[build]
   command = "composer install && drush deploy"
   publish = "web"
-[
-context.production.environment
-]
-  DRUSH_SITE_ALIAS = "drupal-example-build"
-[[
-redirects
-]]
+
+[context.production]
+  environment = { DRUSH_SITE_ALIAS = "drupal-example-build" }
+
+[[redirects]]
   from = "/*"
   to = "/index.php/:splat"
   status = 200
