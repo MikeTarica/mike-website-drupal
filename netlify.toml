@@ -6,7 +6,7 @@ build
 [
 context.production.environment
 ]
-  DRUSH_SITE_ALIAS = "your_site_alias"
+  DRUSH_SITE_ALIAS = "drupal-example-build"
 [[
 redirects
 ]]
