@@ -1,5 +1,5 @@
 [build]
-  command = "composer install && drush deploy"
+  command = "composer install && drush deploy --debug"
   commandOrigin = "config"
   environment = [
     "PHP_VERSION",
