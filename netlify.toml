@@ -8,7 +8,6 @@
   publish = "/opt/build/repo/web"
   publishOrigin = "config"
 
-[build]
   command = "composer install && curl -sS https://github.com/drush-ops/drush/releases/download/10.3.0/drush.phar -o drush && chmod +x drush && ./drush deploy"
   commandOrigin = "config"
   environment = [
