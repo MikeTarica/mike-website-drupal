@@ -1,11 +1,9 @@
 [build]
-  command = "composer install && drush deploy"
-  publish = "web"
-
-[context.production]
-  environment = { DRUSH_SITE_ALIAS = "drupal-example-build" }
-
-[[redirects]]
-  from = "/*"
-  to = "/index.php/:splat"
-  status = 200
+  command = "curl -sS https://getcomposer.org/installer | php && php composer.phar install && drush deploy"
+  commandOrigin = "config"
+  environment = [
+    "PHP_VERSION",
+    "DRUSH_SITE_ALIAS"
+  ]
+  publish = "/opt/build/repo/web"
+  publishOrigin = "config"
