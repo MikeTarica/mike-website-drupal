@@ -6,7 +6,14 @@
     "DRUSH_SITE_ALIAS"
   ]
   publish = "/opt/build/repo/web"
+    repo = {
+    url = "https://github.com/MikeTarica/mike-website-drupal.git"
+    branch = "main"
+  }
+
   publishOrigin = "config"
+  redirectsPath = "web/_redirects"
+  headersPath = "web/_headers"
 
   [scripts]
   install-composer = "8.1 -sS https://getcomposer.org/installer | php"

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3e648b183f3a43fb211295d9dde91f9e",
+    "content-hash": "9784975c7561ccf0a860c37ad0e07e07",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1939,6 +1939,62 @@
             }
         },
         {
+            "name": "drupal/http_response_headers",
+            "version": "3.0.9",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/http_response_headers.git",
+                "reference": "3.0.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/http_response_headers-3.0.9.zip",
+                "reference": "3.0.9",
+                "shasum": "d04f03d0f65ba451f3a828eefd324be2ff7c09d9"
+            },
+            "require": {
+                "drupal/core": "^9.5 || ^10 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.9",
+                    "datestamp": "1722936897",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL 2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "mcdruid",
+                    "homepage": "https://www.drupal.org/user/255969"
+                },
+                {
+                    "name": "minnur",
+                    "homepage": "https://www.drupal.org/user/702026"
+                },
+                {
+                    "name": "mmcconnell",
+                    "homepage": "https://www.drupal.org/user/3559324"
+                },
+                {
+                    "name": "vijaycs85",
+                    "homepage": "https://www.drupal.org/user/93488"
+                }
+            ],
+            "description": "Allows addition, removal and modification of http headers.",
+            "homepage": "https://www.drupal.org/project/http_response_headers",
+            "support": {
+                "source": "https://git.drupalcode.org/project/http_response_headers"
+            }
+        },
+        {
             "name": "drupal/jsonapi_extras",
             "version": "3.25.0",
             "source": {
@@ -2276,6 +2332,62 @@
                 "source": "https://cgit.drupalcode.org/pathauto",
                 "issues": "https://www.drupal.org/project/issues/pathauto",
                 "documentation": "https://www.drupal.org/docs/8/modules/pathauto"
+            }
+        },
+        {
+            "name": "drupal/redirect",
+            "version": "1.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/redirect.git",
+                "reference": "8.x-1.10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/redirect-8.x-1.10.zip",
+                "reference": "8.x-1.10",
+                "shasum": "9d72d7e0717dbdea3ab3306c5d6840da5bd3024c"
+            },
+            "require": {
+                "drupal/core": "^9.2 || ^10 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.10",
+                    "datestamp": "1723277641",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "dave reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "Kristen Pol",
+                    "homepage": "https://www.drupal.org/user/8389"
+                },
+                {
+                    "name": "pifagor",
+                    "homepage": "https://www.drupal.org/user/2375692"
+                }
+            ],
+            "description": "Allows users to redirect from old URLs to new URLs.",
+            "homepage": "https://www.drupal.org/project/redirect",
+            "support": {
+                "source": "https://git.drupalcode.org/project/redirect"
             }
         },
         {
