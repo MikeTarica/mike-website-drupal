@@ -9,6 +9,8 @@
     repo = {
     url = "https://github.com/MikeTarica/mike-website-drupal.git"
     branch = "main"
+    git_clone_flags = "--depth 1"
+    subdir = "docs"
   }
 
   publishOrigin = "config"
