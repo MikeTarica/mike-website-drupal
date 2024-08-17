@@ -1,5 +1,6 @@
 [build]
-  command = "curl -sS https://getcomposer.org/installer | php && php composer.phar install && drush deploy"
+  script = "install-composer"
+  command = "php composer.phar install && drush deploy"
   commandOrigin = "config"
   environment = [
     "PHP_VERSION",
@@ -8,7 +9,12 @@
   publish = "/opt/build/repo/web"
   publishOrigin = "config"
 
-  command = "composer install && curl -sS https://github.com/drush-ops/drush/releases/download/10.3.0/drush.phar -o drush && chmod +x drush && ./drush deploy"
+[scripts]
+  install-composer = "curl -sS https://getcomposer.org/installer | php"
+
+[build]
+  script = "install-drush"
+  command = "php composer.phar install && ./drush deploy"
   commandOrigin = "config"
   environment = [
     "PHP_VERSION",
@@ -16,3 +22,6 @@
   ]
   publish = "/opt/build/repo/web"
   publishOrigin = "config"
+
+[scripts]
+  install-drush = "13.0.1 -sS https://github.com/drush-ops/drush/releases/download/10.3.0/drush.phar -o drush && chmod +x drush"
