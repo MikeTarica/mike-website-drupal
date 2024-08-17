@@ -5,10 +5,8 @@
     "PHP_VERSION",
     "DRUSH_SITE_ALIAS"
   ]
-  publish = "/opt/build/repo/web"
+  publish = "/opt/build/repo/opt/build/repo/web"
   publishOrigin = "config"
+  redirectsPath = "/opt/build/repo/opt/build/repo/web/_redirects"
+  headersPath = "/opt/build/repo/opt/build/repo/web/_headers"
   script = "install-drush"
-
-[scripts]
-  install-drush = "curl -sS https://github.com/drush-ops/drush/releases/download/10.3.0/drush.phar -o drush && chmod +x drush"
-  install-composer = "curl -sS https://getcomposer.org/installer | php"
