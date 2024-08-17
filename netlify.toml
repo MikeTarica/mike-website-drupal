@@ -1,9 +1,4 @@
 [build]
   command = "composer install && drush deploy --debug"
   publish = "/opt/build/repo/web"
-  repo = {
-    url = "https://github.com/MikeTarica/mike-website-drupal.git"
-    branch = "main"
-    git_clone_flags = "--depth 1"
-    subdir = "docs"
-  }
+  repo = { url = "https://github.com/MikeTarica/mike-website-drupal.git" branch = "main" git_clone_flags = "--depth 1" subdir = "docs" }
