@@ -16,5 +16,7 @@
   headersPath = "web/_headers"
 
 [scripts]
-  install-composer = "php -r \"copy('https://getcomposer.org/installer', 'composer-setup.php');\" && php composer-setup.php && php -r \"unlink('composer-setup.php');\""
-  install-drush = "composer require drush/drush && chmod +x vendor/bin/drush"
+  install = "composer install"
+  postinstall = "drush site-install --yes"
+  prebuild = "drush cr"
+  postbuild = "drush deploy"
