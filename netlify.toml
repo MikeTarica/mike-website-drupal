@@ -1,31 +1,18 @@
 [build]
-  command = "composer install && drush deploy"
-  publish = "web"
-  base = "."
+  command = "./drush.phar deploy --debug && ./composer.phar install --debug"
+  commandOrigin = "config"
+[build.environment]
+  PHP_VERSION = "8.1"
+  DRUSH_SITE_ALIAS = "your-site-alias"
+  publish = "/opt/build/repo/web"
+  repo = "url = https://github.com/MikeTarica/mike-website-drupal.git"
+  branch = "main"
+
+
+  publishOrigin = "config"
+  redirectsPath = "web/_redirects"
+  headersPath = "web/_headers"
 
 [scripts]
-  install = "composer install"
-  postinstall = "drush site-install --yes"
-  prebuild = "drush cr"
-  postbuild = "drush deploy"
-
-[context.production]
-  environment = { DRUPAL_ENV = "prod" }
-  command = "composer install && drush deploy --prod"
-
-[context.staging]
-  environment = { DRUPAL_ENV = "stg" }
-  command = "composer install && drush deploy --stg"
-
-[functions]
-  directory = "functions"
-  node_bundler = "esbuild"
-
-[[plugins]]
-  package = "netlify-plugin-one"
-
-    [plugins.inputs]
-    port = 80
-
-[deploy]
-  hook = "drush deploy"
+  install-composer = "php -r \"copy('https://getcomposer.org/installer', 'composer-setup.php');\" && php composer-setup.php && php -r \"unlink('composer-setup.php');\""
+  install-drush = "composer require drush/drush && chmod +x vendor/bin/drush"
