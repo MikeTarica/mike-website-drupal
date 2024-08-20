@@ -6,7 +6,7 @@
     "DRUSH_SITE_ALIAS"
   ]
   publish = "/opt/build/repo/web"
-    repo = {
+  repo = {
     url = "https://github.com/MikeTarica/mike-website-drupal.git"
     branch = "main"
     git_clone_flags = "--depth 1"
