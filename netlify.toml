@@ -21,11 +21,8 @@
   directory = "functions"
   node_bundler = "esbuild"
 
-[[plugins]]
+[plugins]
   plugins = ["netlify-plugin-drupal"]
-    
-    [plugins.inputs]
-    port = 80
 
 [deploy]
   hook = "drush deploy"
