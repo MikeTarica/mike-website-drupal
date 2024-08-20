@@ -6,7 +6,10 @@
     "DRUSH_SITE_ALIAS"
   ]
   publish = "/opt/build/repo/web"
-  repo = { "url" = "https://github.com/MikeTarica/mike-website-drupal.git"}
+   repo = {url = "https://github.com/your-username/your-repo-name.git"
+    branch = "main"
+    git_clone_flags = "--depth 1"
+    subdir = "docs"}
 
   publishOrigin = "config"
   redirectsPath = "web/_redirects"
