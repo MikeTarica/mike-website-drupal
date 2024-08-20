@@ -23,6 +23,9 @@
 
 [[plugins]]
   plugins = ["netlify-plugin-drupal"]
+    
+    [plugins.inputs]
+    port = 80
 
 [deploy]
   hook = "drush deploy"
