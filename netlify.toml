@@ -1,5 +1,5 @@
 [build]
-  command = "chmod +x drush.phar && chmod +x composer.phar && ./drush.phar deploy --debug && ./composer.phar install"
+  command = "./drush.phar deploy --debug && ./composer.phar install --debug"
   commandOrigin = "config"
 [build.environment]
   PHP_VERSION = "8.1"
