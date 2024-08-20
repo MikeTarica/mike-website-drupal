@@ -1,10 +1,9 @@
 [build]
   command = "composer install && drush deploy --debug"
   commandOrigin = "config"
-  environment = [
-    "PHP_VERSION",
-    "DRUSH_SITE_ALIAS"
-  ]
+[build.environment]
+    PHP_VERSION = "8.1"
+    DRUSH_SITE_ALIAS = "your-site-alias"
   publish = "/opt/build/repo/web"
    repo = {url = "https://github.com/MikeTarica/mike-website-drupal.git", branch = "main"}
 
