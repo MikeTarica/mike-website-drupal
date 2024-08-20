@@ -7,7 +7,7 @@
   publish = "/opt/build/repo/web"
   repo = "url = https://github.com/MikeTarica/mike-website-drupal.git"
   branch = "main"
-  
+
 
   publishOrigin = "config"
   redirectsPath = "web/_redirects"
@@ -15,4 +15,4 @@
 
 [scripts]
   install-composer = "php -r \"copy('https://getcomposer.org/installer', 'composer-setup.php');\" && php composer-setup.php && php -r \"unlink('composer-setup.php');\""
-  install-drush = "wget -q -O drush.phar https://github.com/drush-ops/drush/releases/download/10.3.0/drush.phar && chmod +x drush.phar"
+  install-drush = "composer require drush/drush && chmod +x vendor/bin/drush"
