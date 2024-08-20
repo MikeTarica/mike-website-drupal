@@ -1,5 +1,5 @@
 [build]
-  command = "composer install && drush deploy --debug"
+  command = "chmod +x drush.phar && chmod +x composer.phar && ./drush.phar deploy --debug && ./composer.phar install"
   commandOrigin = "config"
 [build.environment]
     PHP_VERSION = "8.1"
@@ -13,5 +13,5 @@
   headersPath = "web/_headers"
 
 [scripts]
-  install-composer = "8.1 -sS https://getcomposer.org/installer | php"
-  install-drush = "10.6 -sS https://github.com/drush-ops/drush/releases/download/10.3.0/drush.phar -o drush && chmod +x drush"
+  install-composer = "php -r \"copy('https://getcomposer.org/installer', 'composer-setup.php');\" && php composer-setup.php && php -r \"unlink('composer-setup.php');\""
+  install-drush = "wget -q -O drush.phar https://github.com/drush-ops/drush/releases/download/10.3.0/drush.phar && chmod +x drush.phar"
