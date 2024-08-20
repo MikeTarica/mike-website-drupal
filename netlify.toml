@@ -1,5 +1,6 @@
 [build]
-  command = "composer install && drush deploy"
+  command = "php drush.phar deploy --debug"
+  command = "php composer.phar install --debug"
   publish = "web"
   base = "."
 
