@@ -5,7 +5,8 @@
     PHP_VERSION = "8.1"
     DRUSH_SITE_ALIAS = "your-site-alias"
   publish = "/opt/build/repo/web"
-  repo = {url = "https://github.com/MikeTarica/mike-website-drupal.git", branch = "main"}
+  url = "https://github.com/MikeTarica/mike-website-drupal.git"
+  branch = "main"
 
   publishOrigin = "config"
   redirectsPath = "web/_redirects"
