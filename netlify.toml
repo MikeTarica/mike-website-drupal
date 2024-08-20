@@ -2,8 +2,8 @@
   command = "chmod +x drush.phar && chmod +x composer.phar && ./drush.phar deploy --debug && ./composer.phar install"
   commandOrigin = "config"
 [build.environment]
-    PHP_VERSION = "8.1"
-    DRUSH_SITE_ALIAS = "your-site-alias"
+    # PHP_VERSION = "8.1"
+    # DRUSH_SITE_ALIAS = "your-site-alias"
   publish = "/opt/build/repo/web"
   url = "https://github.com/MikeTarica/mike-website-drupal.git"
   branch = "main"
