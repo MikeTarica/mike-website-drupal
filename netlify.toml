@@ -7,7 +7,7 @@
   ]
   publish = "/opt/build/repo/web"
     repo = {
-    url = "git@github.com:MikeTarica/mike-website-drupal.git"
+    url = "https://github.com/MikeTarica/mike-website-drupal.git"
     branch = "main"
     git_clone_flags = "--depth 1"
     subdir = "docs"
