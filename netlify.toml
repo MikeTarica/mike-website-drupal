@@ -22,7 +22,7 @@
   node_bundler = "esbuild"
 
 [plugins]
-  plugins = ["netlify-plugin-drupal"]
+  plugins = "netlify-plugin-drupal"
 
 [deploy]
   hook = "drush deploy"
