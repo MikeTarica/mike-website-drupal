@@ -5,12 +5,12 @@
     PHP_VERSION = "8.1"
     DRUSH_SITE_ALIAS = "your-site-alias"
   publish = "/opt/build/repo/web"
-   repo = {url = "https://github.com/MikeTarica/mike-website-drupal.git", branch = "main"}
+  repo = {url = "https://github.com/MikeTarica/mike-website-drupal.git", branch = "main"}
 
   publishOrigin = "config"
   redirectsPath = "web/_redirects"
   headersPath = "web/_headers"
 
-  [scripts]
+[scripts]
   install-composer = "8.1 -sS https://getcomposer.org/installer | php"
   install-drush = "13.0.1 -sS https://github.com/drush-ops/drush/releases/download/10.3.0/drush.phar -o drush && chmod +x drush"
