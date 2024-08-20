@@ -14,4 +14,4 @@
 
 [scripts]
   install-composer = "8.1 -sS https://getcomposer.org/installer | php"
-  install-drush = "13.0.1 -sS https://github.com/drush-ops/drush/releases/download/10.3.0/drush.phar -o drush && chmod +x drush"
+  install-drush = "10.6 -sS https://github.com/drush-ops/drush/releases/download/10.3.0/drush.phar -o drush && chmod +x drush"
