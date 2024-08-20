@@ -7,6 +7,7 @@
   publish = "/opt/build/repo/web"
   repo = "url = https://github.com/MikeTarica/mike-website-drupal.git"
   branch = "main"
+  
 
   publishOrigin = "config"
   redirectsPath = "web/_redirects"
