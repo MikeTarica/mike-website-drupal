@@ -22,7 +22,10 @@
   node_bundler = "esbuild"
 
 [[plugins]]
-  plugins = "netlify-plugin-drupal"
+  package = "netlify-plugin-one"
+
+    [plugins.inputs]
+    port = 80
 
 [deploy]
   hook = "drush deploy"
