@@ -10,6 +10,11 @@
   repo = "url = https://github.com/MikeTarica/mike-website-drupal.git"
   branch = "main"
 
+[redirects]
+  from = "/old-path"
+  to = "https://new-domain.com/new-path"
+  status = 301
+  
 [scripts]
   install = "composer install"
   postinstall = "drush site-install --yes"
