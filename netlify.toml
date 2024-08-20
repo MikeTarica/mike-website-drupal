@@ -1,5 +1,5 @@
 [build]
-  command = "./drush.phar deploy --debug && ./composer.phar install --debug"
+  command = "./vendor/bin/drush deploy --debug"
   commandOrigin = "config"
 [build.environment]
   PHP_VERSION = "8.1"
