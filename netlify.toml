@@ -3,6 +3,13 @@
   publish = "web"
   base = "."
 
+[build.environment]
+  PHP_VERSION = "8.1"
+  DRUSH_SITE_ALIAS = "your-site-alias"
+  publish = "/opt/build/repo/web"
+  repo = "url = https://github.com/MikeTarica/mike-website-drupal.git"
+  branch = "main"
+
 [scripts]
   install = "composer install"
   postinstall = "drush site-install --yes"
@@ -26,26 +33,3 @@
 
 [deploy]
   hook = "drush deploy"
-
-# [build]
-#   command = "composer install && drush deploy"
-#   publish = "web"
-#   base = "."
-
-# [build.environment]
-#   PHP_VERSION = "8.1"
-#   DRUSH_SITE_ALIAS = "your-site-alias"
-#   publish = "/opt/build/repo/web"
-#   repo = "url = https://github.com/MikeTarica/mike-website-drupal.git"
-#   branch = "main"
-
-
-#   publishOrigin = "config"
-#   redirectsPath = "web/_redirects"
-#   headersPath = "web/_headers"
-
-# [scripts]
-#   install = "composer install"
-#   postinstall = "drush site-install --yes"
-#   prebuild = "drush cr"
-#   postbuild = "drush deploy"
