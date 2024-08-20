@@ -21,7 +21,7 @@
   directory = "functions"
   node_bundler = "esbuild"
 
-[plugins]
+[[plugins]]
   plugins = "netlify-plugin-drupal"
 
 [deploy]
