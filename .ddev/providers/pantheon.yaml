@@ -41,7 +41,7 @@
 # `ddev exec terminus site:list` will show available sites
 
 environment_variables:
-  project: mike-tarica-drupal-example.dev
+  project: drupal-build-mike-tarica.dev
 
 auth_command:
   command: |
